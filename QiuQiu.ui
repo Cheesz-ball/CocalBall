@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1082</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>CocoaBall</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Icon.qrc">
+    <normaloff>:/Main/yarn-ball.png</normaloff>:/Main/yarn-ball.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pbSwitchTheme">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: white;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+QPushButton:hover {
+   icon:url(:/Main/yarn-ball (1).png);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Icon.qrc">
+           <normaloff>:/Main/yarn-ball.png</normaloff>:/Main/yarn-ball.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #F2E8C6;color: white;padding: 0px 0px;border-radius: 0px;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbMinimize">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: white;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+QPushButton:hover {
+    background-color: #DAD4B5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Icon.qrc">
+           <normaloff>:/Main/minus-small.png</normaloff>:/Main/minus-small.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbWindow">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: white;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+QPushButton:hover {
+    background-color: #DAD4B5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Icon.qrc">
+           <normaloff>:/Main/window-restore.png</normaloff>:/Main/window-restore.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbClose">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: white;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+QPushButton:hover {
+    background-color: #982B1C;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Icon.qrc">
+           <normaloff>:/Main/cross-small.png</normaloff>:/Main/cross-small.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #F2E8C6;color: white;padding: 0px 0px;border-radius: 0px;
+</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SizeConstraint::SetMinAndMaxSize</enum>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pbMain">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: #F7C566;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+	 icon: url(:/Main/data-transfer (1).png);
+	background-color:#DAD4B5;
+}
+QPushButton:checked {
+    background-color: #DAD4B5;
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Icon.qrc">
+                <normaloff>:/Main/data-transfer.png</normaloff>:/Main/data-transfer.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbCalculator">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: #F7C566;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    icon:url(:/Main/calculator (1).png);
+	background-color:#DAD4B5;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Icon.qrc">
+                <normaloff>:/Main/calculator.png</normaloff>:/Main/calculator.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbTranslate">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: #F7C566;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    icon:url(:/Main/translate (1).png);
+	background-color:#DAD4B5;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Icon.qrc">
+                <normaloff>:/Main/translate.png</normaloff>:/Main/translate.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbAiChat">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: #F7C566;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    icon:url(:/Main/mobile-message (1).png);
+	background-color:#DAD4B5;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Icon.qrc">
+                <normaloff>:/Main/mobile-message.png</normaloff>:/Main/mobile-message.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Orientation::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbInfo">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: #F7C566;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+	 icon: url(:/Main/info-.png);
+	background-color:#DAD4B5;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Icon.qrc">
+                <normaloff>:/Main/info.png</normaloff>:/Main/info.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>19</width>
+                <height>19</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbSetting">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="tabletTracking">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #F2E8C6;
+    color: #F7C566;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+	 icon: url(:/Main/customization-cogwheel-.png);
+	background-color:#DAD4B5;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Icon.qrc">
+                <normaloff>:/Main/customization-cogwheel.png</normaloff>:/Main/customization-cogwheel.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="contextMenuPolicy">
+          <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LayoutDirection::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QStackedWidget {
+    background-color: #FFF8DC; 
+	color:#FF9843;
+}
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="mainPage"/>
+         <widget class="QWidget" name="calculatorPage"/>
+         <widget class="QWidget" name="translatepage">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="cursor">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QTabWidget {
+    border: 1px solid #CCCCCC;
+	color: #FF9843;
+    background-color: #FFF8DC;
+}
+
+QTabBar::tab {
+    background-color: #F2E8C6;
+    border: 1px solid #F2E8C6;
+    padding: 5px;
+    margin: 2px;
+    min-width: 80px;
+	border-radius:5px;
+}
+
+QTabBar::tab:selected {
+    background-color: #F2E8C6;
+    border-bottom: 2px solid #8B7E4E;
+}
+
+QTabBar::tab:hover {
+    background-color: #837D67;
+}
+
+QTabWidget::pane {
+    border: 1px solid #837D67;
+    padding: 5px;
+    background-color: #F2E8C6;
+	border-radius:5px;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+</string>
+             </property>
+             <property name="currentIndex">
+              <number>2</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <attribute name="title">
+               <string>Tab 1</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="tab_3">
+              <attribute name="title">
+               <string>页</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="tab_2">
+              <attribute name="title">
+               <string>CST自用结果浏览</string>
+              </attribute>
+              <widget class="QWidget" name="">
+               <property name="geometry">
+                <rect>
+                 <x>21</x>
+                 <y>110</y>
+                 <width>656</width>
+                 <height>34</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_CstMy1">
+                <item>
+                 <widget class="QPushButton" name="pbInportCstStruct">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{background-color:#F2E8C6;border-radius:5px;color:#56504a;}
+QPushButton::hover{background-color:#c2ba9e;}</string>
+                  </property>
+                  <property name="text">
+                   <string>导入结构</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pbInportCstResult">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{background-color:#F2E8C6;border-radius:5px;color:#56504a;}
+QPushButton::hover{background-color:#c2ba9e;}</string>
+                  </property>
+                  <property name="text">
+                   <string>设置结果文件夹</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelCstNowPlot">
+                    <property name="minimumSize">
+                     <size>
+                      <width>70</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>70</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>微软雅黑</family>
+                      <pointsize>10</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>当前绘制：</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="spinBoxCstNowPlot">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+                    </property>
+                    <property name="readOnly">
+                     <bool>false</bool>
+                    </property>
+                    <property name="singleStep">
+                     <number>2</number>
+                    </property>
+                    <property name="stepType">
+                     <enum>QAbstractSpinBox::StepType::AdaptiveDecimalStepType</enum>
+                    </property>
+                    <property name="value">
+                     <number>1</number>
+                    </property>
+                    <property name="displayIntegerBase">
+                     <number>10</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelCstNowPlotMode">
+                    <property name="minimumSize">
+                     <size>
+                      <width>70</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>70</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>微软雅黑</family>
+                      <pointsize>10</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>当前绘制：</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBoxCstNowPlot">
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>透射率</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>吸收率</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pbSavePlotCstStruct">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{background-color:#F2E8C6;border-radius:5px;color:#56504a;}
+QPushButton::hover{background-color:#c2ba9e;}</string>
+                  </property>
+                  <property name="text">
+                   <string>保存图片</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pbPlotCstStruct">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{background-color:#F2E8C6;border-radius:5px;color:#56504a;}
+QPushButton::hover{background-color:#c2ba9e;}</string>
+                  </property>
+                  <property name="text">
+                   <string>绘制结构</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="aiChatPage"/>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbClose</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1079</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbMinimize</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>979</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbWindow</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>showMaximized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1029</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
