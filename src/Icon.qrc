@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="Title">
+    <file>window.png</file>
+    <file>brandball.png</file>
+    <file>brandball_invert.png</file>
+    <file>close.png</file>
+    <file>min.png</file>
+  </qresource>
+  <qresource prefix="SpinBox">
+    <file>down.png</file>
+    <file>up.png</file>
+  </qresource>
+  <qresource prefix="SideBar">
+    <file>home.png</file>
+    <file>home_push.png</file>
+    <file>calculator.png</file>
+    <file>calculator_push.png</file>
+    <file>data_transfer.png</file>
+    <file>data_transfer_push.png</file>
+    <file>info.png</file>
+    <file>info_push.png</file>
+    <file>message.png</file>
+    <file>message_push.png</file>
+    <file>setting.png</file>
+    <file>setting_push.png</file>
+    <file>translate.png</file>
+    <file>translate_push.png</file>
+  </qresource>
+</RCC>
